@@ -200,6 +200,13 @@ function App() {
           </List>
         </div>
       </div>
+      <h2>
+        {taskCount === 0
+          ? null
+          : taskCount === 1
+          ? `You have ${taskCount} task`
+          : `You have ${taskCount} tasks`}
+      </h2>
     </Container>
   );
 }
